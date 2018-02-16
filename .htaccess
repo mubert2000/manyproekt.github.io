@@ -1,0 +1,76 @@
+DirectoryIndex index.php
+RewriteEngine On
+
+# Основной домен
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+ErrorDocument 404 /404.php
+
+# Главная
+RewriteRule ^index.html$ index.php [L]
+
+# Авторизация
+RewriteRule ^login(/?)+$ index.php?menu=login [L]
+
+# Восстановление пароля
+RewriteRule ^recovered(/?)+$ index.php?menu=recovered [L]
+
+# Регистрация
+RewriteRule ^register(/?)+$ index.php?menu=register [L]
+
+# Правила
+RewriteRule ^rules(/?)+$ index.php?menu=rules [L]
+
+# Контакты
+RewriteRule ^contacts(/?)+$ index.php?menu=contacts [L]
+
+# Новости
+RewriteRule ^news(/?)+$ index.php?menu=news [L]
+
+# О нас
+RewriteRule ^about(/?)+$ index.php?menu=about [L]
+
+# Маркетинг
+RewriteRule ^market(/?)+$ index.php?menu=market [L]
+
+# Голосование
+RewriteRule ^golos(/?)+$ index.php?menu=golos [L]
+
+# Маркетинг
+RewriteRule ^success(/?)+$ index.php?menu=success [L]
+RewriteRule ^reminder(/?)+$ index.php?menu=reminder [L]
+
+
+
+
+
+# Аккаунт
+RewriteRule ^account/support(/?)+$ index.php?menu=account&sel=support [L]
+RewriteRule ^account/config(/?)+$ index.php?menu=account&sel=config [L]
+RewriteRule ^account/insert(/?)+$ index.php?menu=account&sel=insert [L]
+RewriteRule ^account/insert_qiwi(/?)+$ index.php?menu=account&sel=insert_qiwi [L]
+RewriteRule ^account/insert_payeer(/?)+$ index.php?menu=account&sel=insert_payeer [L]
+RewriteRule ^account/deposit(/?)+$ index.php?menu=account&sel=deposit [L]
+RewriteRule ^account/deposits(/?)+$ index.php?menu=account&sel=deposits [L]
+RewriteRule ^account/ref(/?)+$ index.php?menu=account&sel=ref [L]
+RewriteRule ^account/pay(/?)+$ index.php?menu=account&sel=pay [L]
+RewriteRule ^account/pay_qiwi(/?)+$ index.php?menu=account&sel=pay_qiwi [L]
+RewriteRule ^account/pay_payeer(/?)+$ index.php?menu=account&sel=pay_payeer [L]
+RewriteRule ^account/exit(/?)+$ index.php?menu=account&sel=exit [L]
+RewriteRule ^account(/?)+$ index.php?menu=account [L]
+RewriteRule ^otziv(/?)+$ index.php?menu=otziv [L]
+RewriteRule ^account/sup(/?)+$ index.php?menu=account&sel=sup [L]
+RewriteRule ^account/sup/id/([0-9]+)(/?)+$ index.php?menu=account&sel=sup&id=$1 [L]
+RewriteRule ^account/sup/new(/?)+$ index.php?menu=account&sel=sup&new [L]
+
+#Adminka
+RewriteRule ^admin(/?)+$ index.php?menu=admin [L]
+RewriteRule ^admin/insert(/?)+$ index.php?menu=admin&sel=insert [L]
+RewriteRule ^admin/insert(/?)+$ index.php?menu=admin&sel=opros [L]
+RewriteRule ^admin/pay(/?)+$ index.php?menu=admin&sel=pay [L]
+RewriteRule ^admin/news(/?)+$ index.php?menu=admin&sel=news [L]
+RewriteRule ^admin/fake(/?)+$ index.php?menu=admin&sel=fake [L]
+RewriteRule ^admin/otziv(/?)+$ index.php?menu=admin&sel=otziv [L]
+RewriteRule ^admin/sup(/?)+$ index.php?menu=admin&sel=sup [L]
+RewriteRule ^admin/users(/?)+$ index.php?menu=admin&sel=users [L]
+RewriteRule ^admin/sup/id/([0-9]+)(/?)+$ index.php?menu=admin&sel=sup&id=$1 [L]

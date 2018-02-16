@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
+
+@font-face {
+    font-family: 'Gubia light';
+    src: url('gubialight-webfont.eot');
+    src: url('gubialight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gubialight-webfont.woff') format('woff'),
+         url('gubialight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gubia light_alternate';
+    src: url('gubialightalternate-webfont.eot');
+    src: url('gubialightalternate-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gubialightalternate-webfont.woff') format('woff'),
+         url('gubialightalternate-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gubia regular';
+    src: url('gubiaregular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gubia bold';
+    src: url('gubiabold-webfont.eot');
+    src: url('gubiabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gubiabold-webfont.woff') format('woff'),
+         url('gubiabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gubia bold_alt';
+    src: url('gubiaboldalternate-webfont.eot');
+    src: url('gubiaboldalternate-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gubiaboldalternate-webfont.woff') format('woff'),
+         url('gubiaboldalternate-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gubia black';
+    src: url('gubiablack-webfont.eot');
+    src: url('gubiablack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gubiablack-webfont.woff') format('woff'),
+         url('gubiablack-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gubia black_alt';
+    src: url('gubiablackalternate-webfont.eot');
+    src: url('gubiablackalternate-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gubiablackalternate-webfont.woff') format('woff'),
+         url('gubiablackalternate-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
